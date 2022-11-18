@@ -14,7 +14,7 @@ public interface CarRepository extends JpaRepository<Car, Long> {
 
     List<Car> findCarsByEmployee(Employee employee);
 
-    Car deleteCarsByEmployee(Employee employee);
+    void deleteCarsByEmployee(Employee employee);
 
     /*
     @Query("select c from Car c where c.employee = :employeeId")
