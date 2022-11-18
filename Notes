@@ -1,0 +1,7 @@
+TO-Do:
+-make the fetch type for employee eager
+    -so when you delete an employee, you will also his cars
+    -doesnt work, i cant delete employees with cars
+-i cant delete anything, which is linked by another entry
+-put method only works in my test class
+-make the entities bidirectional
