@@ -23,7 +23,7 @@ public class EmployeeController {
         return employeeService.getAllEmployees();
     }
 
-    @GetMapping(value = "/employee/{employeeId}")
+    @GetMapping( "/employee/{employeeId}")
     public Employee getEmployee(@PathVariable("employeeId") Long emloyeeId) throws EmployeeNotFoundException {
         return employeeService.getEmployeeById(emloyeeId);
     }

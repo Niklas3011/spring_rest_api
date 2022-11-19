@@ -5,7 +5,6 @@ import niklas.the_office_us.entity.Employee;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface EmployeeService {
     List<Employee> getAllEmployees();

@@ -22,9 +22,9 @@ public class Car {
             strategy = GenerationType.SEQUENCE,
             generator = "car_sequence"
     )
-    private Long id;
+    private Long carId;
     private String numberPlate;
-    private String Model;
+    private String model;
     private Integer hp;
     private Integer buildYear;
 
@@ -36,7 +36,3 @@ public class Car {
     @ToString.Exclude
     private Employee employee;
 }
-/*cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY
-
- */

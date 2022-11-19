@@ -33,7 +33,7 @@ class CarServiceImplTest {
     void saveCar() throws EmployeeNotFoundException {
         Car car = Car.builder()
                 .numberPlate("ME N 500")
-                .Model("S 500")
+                .model("S 500")
                 .hp(500)
                 .buildYear(2005)
                 .build();
@@ -45,7 +45,7 @@ class CarServiceImplTest {
     void updateCarById() throws CarNotFoundException {
         Car car = Car.builder()
                 .hp(120)
-                .Model("Toyota")
+                .model("Toyota")
                 .buildYear(2000)
                 .numberPlate("ME E 302")
                 .build();
@@ -56,11 +56,10 @@ class CarServiceImplTest {
 
     @Test
     void removeCarById() throws CarNotFoundException {
-        ResponseEntity<String> responseEntity = carService.removeCarById(2L);
+        ResponseEntity<String> responseEntity = carService.removeCarById(4L);
         System.out.println("responseEntity = " + responseEntity);
     }
 
-    //funktioniert nicht
     @Test
     void removeCarsFromEmployee() throws EmployeeNotFoundException {
         ResponseEntity<String> responseEntity = carService.removeCarsFromEmployee(2L);

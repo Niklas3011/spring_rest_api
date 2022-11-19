@@ -41,26 +41,6 @@ public class CarServiceImpl implements CarService{
         return carRepository.save(car);
     }
 
-    /*@Override
-    public ResponseEntity<Car> updateCarByEmployee(Car car, Long id) throws EmployeeNotFoundException {
-        Employee employee = employeeService.getEmployeeById(id);
-        Optional<Car> current = carRepository.findById(car.getId());
-        if(current.isPresent()) {
-            Car carOld = current.get();
-            carOld.setHp(car.getHp());
-            carOld.setModel(car.getModel());
-            carOld.setBuildYear(car.getBuildYear());
-            carOld.setNumberPlate(car.getNumberPlate());
-            carRepository.save(carOld);
-            return new ResponseEntity<>(carOld, HttpStatus.OK);
-        }
-        else {
-            car.setEmployee(employee);
-            carRepository.save(car);
-            return new ResponseEntity<>(car, HttpStatus.CREATED);
-        }
-    }*/
-
     @Override
     public ResponseEntity<Car> updateCarById(Car car, Long id) throws CarNotFoundException {
         Optional<Car> current = carRepository.findById(id);

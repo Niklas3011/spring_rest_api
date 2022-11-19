@@ -1,0 +1,65 @@
+POST http://localhost:8080/api/employee/1/car
+Content-Type: application/json
+
+{
+  "numberPlate": "D NV 200",
+  "model": "BMW m4",
+  "hp": 431,
+  "buildYear": 2018
+}
+
+###
+
+POST http://localhost:8080/api/employee/1/car
+Content-Type: application/json
+
+{
+  "numberPlate": "D NV 300",
+  "model": "C63s AMG",
+  "hp": 510,
+  "buildYear": 2017
+}
+
+###
+
+GET http://localhost:8080/api/car/1
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/employee/1/cars
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/api/car/2
+Content-Type: application/json
+
+{
+  "numberPlate": "D DD 400",
+  "model": "Audi Rs5",
+  "hp": 450,
+  "buildYear": 2016
+}
+
+###
+
+PUT http://localhost:8080/api/car/3
+Content-Type: application/json
+
+{
+  "numberPlate": "D DD 500",
+  "model": "Panamera",
+  "hp": 700,
+  "buildYear": 2017
+}
+
+###
+
+DELETE http://localhost:8080/api/car/2
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/api/employee/1/cars
+Accept: application/json

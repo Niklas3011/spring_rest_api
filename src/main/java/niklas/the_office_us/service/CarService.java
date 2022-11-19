@@ -15,8 +15,6 @@ public interface CarService {
 
     Car saveCar(Car car, Long id) throws EmployeeNotFoundException;
 
-    //ResponseEntity<Car> updateCarByEmployee(Car car, Long id) throws EmployeeNotFoundException;
-
     ResponseEntity<Car> updateCarById(Car car, Long id) throws CarNotFoundException;
 
     ResponseEntity<String> removeCarById(Long id) throws CarNotFoundException;

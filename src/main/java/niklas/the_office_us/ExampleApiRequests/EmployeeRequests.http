@@ -1,0 +1,40 @@
+POST http://localhost:8080/api/employee
+Content-Type: application/json
+
+{"firstName": "Lebron", "lastName": "James", "age":  37, "role": "Athlete"}
+
+###
+
+POST http://localhost:8080/api/employee
+Content-Type: application/json
+
+{"firstName": "Kevin", "lastName": "Hart", "age":  43, "role": "Comedian"}
+
+###
+
+GET http://localhost:8080/api/employees
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/employee/1
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/api/employee/1
+Content-Type: application/json
+
+{"firstName": "Max", "lastName": "Verstappen", "age":  25, "role": "Racer"}
+
+###
+
+PUT http://localhost:8080/api/employee/3
+Content-Type: application/json
+
+{"firstName": "Conor", "lastName": "McGregor", "age":  34, "role": "Fighter"}
+
+###
+
+DELETE http://localhost:8080/api/employee/1
+Accept: application/json

@@ -7,11 +7,14 @@ import niklas.the_office_us.repository.EmployeeRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 @Service
 @AllArgsConstructor
+@Transactional
 public class EmployeeServiceImpl implements EmployeeService{
 
     private EmployeeRepository employeeRepository;
@@ -31,8 +34,6 @@ public class EmployeeServiceImpl implements EmployeeService{
         return employeeRepository.findById(id).orElseThrow(EmployeeNotFoundException::new);
     }
 
-
-    //problem: if you update a user, it will not return the updated user
     @Override
     public ResponseEntity<Employee> updateEmployeeById(Employee employeeNew, Long id) {
         Optional <Employee> current = employeeRepository.findById(id);
@@ -51,7 +52,6 @@ public class EmployeeServiceImpl implements EmployeeService{
         }
     }
 
-    //status codes: 200 deleted successfully
     @Override
     public ResponseEntity<String> removeEmployeeById(Long id) {
         if(employeeRepository.findById(id).isPresent()){
