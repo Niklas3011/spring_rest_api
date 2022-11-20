@@ -1,6 +1,6 @@
 # spring_rest_api
 
-##Info
+## Info
 -This is a REST API for storing Employees and their cars
 -The data is stored inside a MySql Database
 -To store and query data, I used Spring Data JPA and to validate user entry, I used Spring Boot Validation
@@ -8,7 +8,7 @@
 -only accepts and returns JSON Data
 -HTTP request example are stored in: src/main/java/niklas.office/ExampleApiRequests
 
-##Endpoints
+## Endpoints
 EmployeeController
 GET: api/employees -> gets all employees
 GET: api/employee/{employeeId} -> gets an employee by Id
