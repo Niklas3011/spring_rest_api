@@ -2,7 +2,7 @@ version: '3.3'
 services:
   db:
     image: mysql:5.7
-    container_name: the_office_mysql
+    container_name: office_mysql
     restart: always
     environment:
       MYSQL_DATABASE: 'db'
