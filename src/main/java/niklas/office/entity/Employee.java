@@ -1,4 +1,4 @@
-package niklas.the_office_us.entity;
+package niklas.office.entity;
 
 import lombok.*;
 import javax.persistence.*;

@@ -1,16 +1,14 @@
-package niklas.the_office_us.service;
+package niklas.office.service;
 
-import niklas.the_office_us.Exception.CarNotFoundException;
-import niklas.the_office_us.Exception.EmployeeNotFoundException;
-import niklas.the_office_us.entity.Car;
+import niklas.office.Exception.CarNotFoundException;
+import niklas.office.Exception.EmployeeNotFoundException;
+import niklas.office.entity.Car;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class CarServiceImplTest {

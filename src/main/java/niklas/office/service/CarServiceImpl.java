@@ -1,11 +1,11 @@
-package niklas.the_office_us.service;
+package niklas.office.service;
 
 import lombok.AllArgsConstructor;
-import niklas.the_office_us.Exception.CarNotFoundException;
-import niklas.the_office_us.Exception.EmployeeNotFoundException;
-import niklas.the_office_us.entity.Car;
-import niklas.the_office_us.entity.Employee;
-import niklas.the_office_us.repository.CarRepository;
+import niklas.office.Exception.CarNotFoundException;
+import niklas.office.Exception.EmployeeNotFoundException;
+import niklas.office.entity.Car;
+import niklas.office.entity.Employee;
+import niklas.office.repository.CarRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

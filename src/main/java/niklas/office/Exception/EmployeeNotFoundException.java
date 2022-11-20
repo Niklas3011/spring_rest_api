@@ -1,4 +1,4 @@
-package niklas.the_office_us.Exception;
+package niklas.office.Exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

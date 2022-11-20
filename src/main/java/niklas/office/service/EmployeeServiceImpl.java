@@ -1,9 +1,9 @@
-package niklas.the_office_us.service;
+package niklas.office.service;
 
 import lombok.AllArgsConstructor;
-import niklas.the_office_us.Exception.EmployeeNotFoundException;
-import niklas.the_office_us.entity.Employee;
-import niklas.the_office_us.repository.EmployeeRepository;
+import niklas.office.Exception.EmployeeNotFoundException;
+import niklas.office.entity.Employee;
+import niklas.office.repository.EmployeeRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

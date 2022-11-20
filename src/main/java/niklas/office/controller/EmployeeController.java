@@ -1,9 +1,9 @@
-package niklas.the_office_us.controller;
+package niklas.office.controller;
 
 import lombok.AllArgsConstructor;
-import niklas.the_office_us.Exception.EmployeeNotFoundException;
-import niklas.the_office_us.entity.Employee;
-import niklas.the_office_us.service.EmployeeService;
+import niklas.office.Exception.EmployeeNotFoundException;
+import niklas.office.entity.Employee;
+import niklas.office.service.EmployeeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

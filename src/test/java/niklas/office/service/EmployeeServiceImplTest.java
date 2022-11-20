@@ -1,14 +1,12 @@
-package niklas.the_office_us.service;
+package niklas.office.service;
 
-import niklas.the_office_us.Exception.EmployeeNotFoundException;
-import niklas.the_office_us.entity.Employee;
+import niklas.office.Exception.EmployeeNotFoundException;
+import niklas.office.entity.Employee;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class EmployeeServiceImplTest {
