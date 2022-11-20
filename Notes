@@ -1,7 +1,0 @@
-Employee:
-    Everything works, if there is no car saved
-
-Car:
-    When adding a Car, i get this error message: org.apache.http.ConnectionClosedException: Premature end of chunk coded message body: closing chunk expected
-    but it still works
-    -PUT is just for updating, not for adding new cars
