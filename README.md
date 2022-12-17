@@ -6,7 +6,7 @@
 - To store and query data, I used Spring Data JPA and to validate user entry, I used Spring Boot Validation
 - Spring Boot Web is used to implement a Controller to handle HTTP requests
 - only accepts and returns JSON Data
-- HTTP request example are stored in: src/main/java/niklas.office/ExampleApiRequests
+- HTTP request examples are stored in: src/main/java/niklas.office/ExampleApiRequests
 
 ## Endpoints
 EmployeeController
